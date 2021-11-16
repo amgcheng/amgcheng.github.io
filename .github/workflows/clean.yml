@@ -13,7 +13,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: testing clean
-        uses: amgcheng/ssh-action@master
+        uses: amgcheng/amgcheng.github.io@master
         with:
           host: $(( secrets.HOST }}
           username: ${{ secrets.USERNAME }}
