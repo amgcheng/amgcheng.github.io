@@ -14,12 +14,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: testing deploy
-        uses: amgcheng/ssh-action@master
+        uses: amgcheng/amgcheng.github.io@master
         with:
           host: $(( secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           scripts: |
-            cd amgcheng.github.io
             git pull
