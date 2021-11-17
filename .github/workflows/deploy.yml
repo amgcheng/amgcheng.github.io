@@ -21,4 +21,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           scripts: |
+            cd ../pub
             git pull
